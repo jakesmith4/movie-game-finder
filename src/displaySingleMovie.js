@@ -83,9 +83,9 @@ const displayMovie = (data) => {
   console.log(rating);
   const starIcons = getElement('.star-icons');
 
-  // if (rating) {
-  //   starIcons.style.width = `${rating * 10}%`;
-  // }
+  if (rating) {
+    starIcons.style.width = `${rating * 10}%`;
+  }
 };
 
 export default displayMovie;
