@@ -63,6 +63,8 @@ const displayMovie = (data) => {
   <p>${released === 'N/A' ? '' : released}</p>
   <h4>${runtime === 'N/A' ? '' : 'Runtime'}</h4>
   <p>${runtime === 'N/A' ? '' : runtime}</p>
+  <h4>${rating === 'N/A' ? '' : 'Rating'}</h4>
+  <p>${rating === 'N/A' ? '' : rating}${rating === 'N/A' ? '' : '/10'}</p>
   <a href="index.html" class="btn">Back to search</a>
   `;
 };

@@ -166,10 +166,8 @@ p {
   display: none;
 }
 
-.hand-loading {
-  width: 150px;
-  border-radius: 50%;
-  outline: 5px solid #f9d1d5;
+.countdown-loading {
+  border-radius: var(--radius);
 }
 
 /* search form */
