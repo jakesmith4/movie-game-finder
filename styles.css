@@ -381,3 +381,14 @@ input::placeholder {
   padding: 0.3rem 0.5rem;
   font-size: 0.7rem;
 }
+
+.star-container {
+  width: 100px;
+}
+
+.star-icons {
+  background: var(--clr-grey-10);
+  width: 0;
+  height: 20px;
+  overflow: hidden;
+}

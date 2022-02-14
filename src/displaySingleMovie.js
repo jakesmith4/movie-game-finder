@@ -40,8 +40,6 @@ const displayMovie = (data) => {
   const movieInfo = getElement('.movie-info');
   const imgContainer = getElement('.img-container');
 
-  console.log(image);
-
   imgContainer.innerHTML = `
   <img src="${
     image === 'N/A' ? './img-not-found.png' : image
@@ -68,9 +66,24 @@ const displayMovie = (data) => {
   <h4>${runtime === 'N/A' ? '' : 'Runtime'}</h4>
   <p>${runtime === 'N/A' ? '' : runtime}</p>
   <h4>${rating === 'N/A' ? '' : 'Rating'}</h4>
+  <div class="star-container">
+      <div class="star-icons">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
   <p>${rating === 'N/A' ? '' : rating}${rating === 'N/A' ? '' : '/10'}</p>
   <a href="index.html" class="btn">Back to search</a>
   `;
+  console.log(rating);
+  const starIcons = getElement('.star-icons');
+
+  if (rating) {
+    starIcons.style.width = `${rating * 10}%`;
+  }
 };
 
 export default displayMovie;
