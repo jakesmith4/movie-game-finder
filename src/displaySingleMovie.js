@@ -67,7 +67,8 @@ const displayMovie = (data) => {
   <p>${runtime === 'N/A' ? '' : runtime}</p>
   <h4>${rating === 'N/A' ? '' : 'Rating'}</h4>
   <div class="star-container">
-      <div class="star-icons">
+    <div class="star-icons">
+      <div class="star">
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -75,15 +76,16 @@ const displayMovie = (data) => {
         <i class="fa-solid fa-star"></i>
       </div>
     </div>
+  </div>
   <p>${rating === 'N/A' ? '' : rating}${rating === 'N/A' ? '' : '/10'}</p>
   <a href="index.html" class="btn">Back to search</a>
   `;
   console.log(rating);
   const starIcons = getElement('.star-icons');
 
-  if (rating) {
-    starIcons.style.width = `${rating * 10}%`;
-  }
+  // if (rating) {
+  //   starIcons.style.width = `${rating * 10}%`;
+  // }
 };
 
 export default displayMovie;

@@ -383,12 +383,16 @@ input::placeholder {
 }
 
 .star-container {
-  width: 100px;
+  width: 92px;
 }
 
 .star-icons {
   background: var(--clr-grey-10);
-  width: 0;
-  height: 20px;
+  width: 100%;
   overflow: hidden;
+}
+
+.star {
+  width: 100px;
+  background: green;
 }
