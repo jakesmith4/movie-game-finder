@@ -299,7 +299,7 @@ input::placeholder {
 
 .img-container {
   position: relative;
-  max-width: 300px;
+  width: 300px;
 }
 
 .movie-img {
