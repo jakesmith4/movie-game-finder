@@ -41,7 +41,7 @@ const displayMovie = (data) => {
   const imgContainer = getElement('.img-container');
 
   imgContainer.innerHTML = `
-  <img src="${image}" alt="${title} class="movie-img">
+  <img src="${image}" alt="${title}" class="movie-img">
   <span class="genre">${genre}</span>
   <span class="rated">${rated}</span>
   <span class="language">${language}</span>
