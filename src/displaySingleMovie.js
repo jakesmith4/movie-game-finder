@@ -40,8 +40,12 @@ const displayMovie = (data) => {
   const movieInfo = getElement('.movie-info');
   const imgContainer = getElement('.img-container');
 
+  console.log(image);
+
   imgContainer.innerHTML = `
-  <img src="${image}" alt="${title}" class="movie-img">
+  <img src="${
+    image === 'N/A' ? './img-not-found.png' : image
+  }" alt="${title}" class="movie-img">
   <span class="genre">${genre}</span>
   <span class="rated">${rated}</span>
   <span class="language">${language}</span>
